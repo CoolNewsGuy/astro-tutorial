@@ -13,7 +13,7 @@ const identity = {
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
 
 const skillColor = "navy";
@@ -70,8 +70,6 @@ const textCase = "uppercase";
 
   {happy && <p>I am happy to be learning Astro!</p>}
 
-  {finished && <p>I finished this tutorial!</p>}
-
   {
     goal === 3 ? (
       <p>My goal is to finish in 3 days.</p>
@@ -79,4 +77,6 @@ const textCase = "uppercase";
       <p>My goal is not 3 days.</p>
     )
   }
+
+  {finished && <p>I finished this tutorial!</p>}
 </BaseLayout>
